@@ -88,19 +88,19 @@ local s = t.store(commonConfig {
   bucketCache: {
     type: 'memcached',
     config+: {
-      // NOTICE: <MEMCACHED_SERVICE> is a placeholder to generate examples.
+      // NOTICE: memcached Service name is defaulted to 'memcached'
       // List of memcached addresses, that will get resolved with the DNS service discovery provider.
       // For DNS service discovery reference https://thanos.io/service-discovery.md/#dns-service-discovery
-      addresses: ['dnssrv+_client._tcp.<MEMCACHED_SERVICE>.%s.svc.cluster.local' % commonConfig.namespace],
+      addresses: ['dnssrv+_client._tcp.memcached.%s.svc.cluster.local' % commonConfig.namespace],
     },
   },
   indexCache: {
     type: 'memcached',
     config+: {
-      // NOTICE: <MEMCACHED_SERVICE> is a placeholder to generate examples.
+      // NOTICE: memcached Service name is defaulted to 'memcached'
       // List of memcached addresses, that will get resolved with the DNS service discovery provider.
       // For DNS service discovery reference https://thanos.io/service-discovery.md/#dns-service-discovery
-      addresses: ['dnssrv+_client._tcp.<MEMCACHED_SERVICE>.%s.svc.cluster.local' % commonConfig.namespace],
+      addresses: ['dnssrv+_client._tcp.memcached.%s.svc.cluster.local' % commonConfig.namespace],
     },
   },
 });
@@ -139,19 +139,19 @@ local qf = t.queryFrontend(commonConfig {
   queryRangeCache: {
     type: 'memcached',
     config+: {
-      // NOTICE: <MEMCACHED_SERVICE> is a placeholder to generate examples.
+      // NOTICE: memcached Service name is defaulted to 'memcached'
       // List of memcached addresses, that will get resolved with the DNS service discovery provider.
       // For DNS service discovery reference https://thanos.io/service-discovery.md/#dns-service-discovery
-      addresses: ['dnssrv+_client._tcp.<MEMCACHED_SERVICE>.%s.svc.cluster.local' % commonConfig.namespace],
+      addresses: ['dnssrv+_client._tcp.memcached.%s.svc.cluster.local' % commonConfig.namespace],
     },
   },
   labelsCache: {
     type: 'memcached',
     config+: {
-      // NOTICE: <MEMCACHED_SERVICE> is a placeholder to generate examples.
+      // NOTICE: memcached Service name is defaulted to 'memcached'
       // List of memcached addresses, that will get resolved with the DNS service discovery provider.
       // For DNS service discovery reference https://thanos.io/service-discovery.md/#dns-service-discovery
-      addresses: ['dnssrv+_client._tcp.<MEMCACHED_SERVICE>.%s.svc.cluster.local' % commonConfig.namespace],
+      addresses: ['dnssrv+_client._tcp.memcached.%s.svc.cluster.local' % commonConfig.namespace],
     },
   },
 });
@@ -180,19 +180,19 @@ local strs = t.storeShards(commonConfig {
   bucketCache: {
     type: 'memcached',
     config+: {
-      // NOTICE: <MEMCACHED_SERVICE> is a placeholder to generate examples.
+      // NOTICE: memcached Service name is defaulted to 'memcached'
       // List of memcached addresses, that will get resolved with the DNS service discovery provider.
       // For DNS service discovery reference https://thanos.io/service-discovery.md/#dns-service-discovery
-      addresses: ['dnssrv+_client._tcp.<MEMCACHED_SERVICE>.%s.svc.cluster.local' % commonConfig.namespace],
+      addresses: ['dnssrv+_client._tcp.memcached.%s.svc.cluster.local' % commonConfig.namespace],
     },
   },
   indexCache: {
     type: 'memcached',
     config+: {
-      // NOTICE: <MEMCACHED_SERVICE> is a placeholder to generate examples.
+      // NOTICE: memcached Service name is defaulted to 'memcached'
       // List of memcached addresses, that will get resolved with the DNS service discovery provider.
       // For DNS service discovery reference https://thanos.io/service-discovery.md/#dns-service-discovery
-      addresses: ['dnssrv+_client._tcp.<MEMCACHED_SERVICE>.%s.svc.cluster.local' % commonConfig.namespace],
+      addresses: ['dnssrv+_client._tcp.memcached.%s.svc.cluster.local' % commonConfig.namespace],
     },
   },
 });
